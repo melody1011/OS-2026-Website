@@ -7,6 +7,7 @@
     font-family: "Joan", serif;
 }
 
+/*styling the body to center the form and give it a background color*/
 body{
     display:flex;
     justify-content:center;
@@ -20,7 +21,7 @@ body{
     margin:0 15px;
 
 }
-
+/*styling the form container and setting it to be hidden by default*/
 .form-box{
     width:100%;
     max-width:450px;
@@ -41,6 +42,7 @@ h2{
     margin-bottom:20px;
 }
 
+/*styling the input fields and buttons*/
 input,
 select{
     width:100%;
@@ -86,5 +88,15 @@ p a{
 p a:hover{
     text-decoration:underline;
     color:#4e6e58;
+}
+/*styling the error message to be more visible and user-friendly*/
+.error-message {
+    padding:12px;
+    background:#a40000;
+    border-radius:6px;
+    font-size:16px;
+    color:#fff;
+    text-align:center;
+    margin-bottom:20px;
 }
 
