@@ -2,6 +2,36 @@
 
 session_start();
 
+try{
+    //connecting to the database using PDO for better security and error handling
+    $pdo = new PDO("mysql:host=$host;charset=utf8mb4", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    //creating the database if it doesn't exist
+    $pdo->exec("
+        CREATE DATABASE IF NOT EXISTS users_db
+        CHARACTER SET utf8mb4
+        COLLATE utmf8mb4_unicode_ci
+    ");
+
+    //selecting the database to use
+    $pdo->exec("USE users_db");
+
+    //creating the users table if it doesn't exist
+    $pdo->exec("
+        CREATE TABLE IF NOT EXISTS users (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(255) NOT NULL,
+            email VARCHAR(255) NOT NULL UNIQUE,
+            password VARCHAR(255) NOT NULL,
+            role ENUM('user', 'admin') NOT NULL
+        ) 
+        ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+
+} catch (PDOException $e) {
+    die("Database error: " . $e->getMessage());
+}
+
 $errors = [
     'login' => $_SESSION ['login_error'] ?? '', 
     'register' => $_SESSION ['register_error'] ?? ''
