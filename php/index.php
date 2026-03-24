@@ -34,11 +34,14 @@ try{
     die("Database error: " . $e->getMessage());
 }
 
+//retrieving any error messages from the session to display on the forms, and determining which form should be active based on previous user actions
+
 $errors = [
     'login' => $_SESSION ['login_error'] ?? '', 
     'register' => $_SESSION ['register_error'] ?? ''
 
 ];
+
 $activeForm = $_SESSION['active_form'] ?? 'login';
 
 session_unset();
@@ -63,6 +66,7 @@ function isActiveForm($formName, $activeForm) {
 </head>
 <body>
 
+<!-- creating a container for the forms-->
     <div class="container">
         <div class="form-box <?= isActiveForm('login', $activeForm); ?>" id="login-form"> <!--creating a login page--> <!--using the function to set the active class based on which form should be displayed-->
             <form action="login_register.php" method="post">
