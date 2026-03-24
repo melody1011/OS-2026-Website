@@ -2,16 +2,18 @@
 
 session_start();
 
+require_once 'config.php';
+
 try{
     //connecting to the database using PDO for better security and error handling
-    $pdo = new PDO("mysql:host=$host;charset=utf8mb4", $user, $pass);
+    $pdo = new PDO("mysql:host=$host;charset=utf8mb4", $user, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     //creating the database if it doesn't exist
     $pdo->exec("
         CREATE DATABASE IF NOT EXISTS users_db
         CHARACTER SET utf8mb4
-        COLLATE utmf8mb4_unicode_ci
+        COLLATE utf8mb4_unicode_ci
     ");
 
     //selecting the database to use
