@@ -77,6 +77,7 @@ header .navbar a{
 
 header .navbar a:hover{
     color:#4e6e58;
+    text-decoration:underline;
 }
 
 header .icons a{
@@ -100,7 +101,7 @@ header .fa-bars{
     color:#333;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
-    cursor: pinter;
+    cursor: pointer;
     border: .1rem solid rgba(0,0,0,0.3);
     display:none;
 }
@@ -111,8 +112,8 @@ header .fa-bars{
     align-items:center;
     justify-content: center;
     min-height:100vh;
-    background: url() no-repeat;
-    background-size:cover;
+    background: url(../images/welcomeimg.jpg) no-repeat;
+    background-size: 75%;
     background-position:center;
 
 }
@@ -124,6 +125,7 @@ header .fa-bars{
 }
 
 .home .content h3{
+    background:#a8ddbabf;
     font-size:6rem;
     color:#333;
 
@@ -166,7 +168,8 @@ header .fa-bars{
 }
 
 .marketplace .box-container .box{
-    flex:1 1 30rem;
+    flex: 0 0 calc((100% - 3rem) / 3);
+    background:#D0E5D7;
     box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
     border-radius: .5rem;
     border:.1rem solid rgba(0,0,0,.1);
@@ -235,6 +238,84 @@ header .fa-bars{
     text-align:center;
 }
 
+/*styling the events section*/
+.events .content h3{
+    padding:2rem;
+    font-size:3rem;
+    color:#333;
+}
+
+.events .content p{
+    font-size:1.5rem;
+    color:#333;
+    padding:.5rem 0;
+    padding-top:1rem;
+    line-height:1.5;
+}
+
+.events .box-container{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+
+}
+.events .box-container .box{
+    background:#dadada;
+    flex:1 1 15rem;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative;
+
+}
+
+.events .box-container .box .content{
+    padding:2rem;
+    text-align:center;
+}
+
+/*footer styling*/
+.footer{
+    background:#D0E5D7;
+    padding:2rem 9%;
+}
+.footer .box-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+
+.footer .box-container .box{ 
+    flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color:#333;
+    font-size:2.5rem;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    display:block;
+    color:#333;
+    font-size:1.5rem;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color:#4e6e58;
+    text-decoration:underline;
+}
+
+.footer .credit{
+    text-align:center;
+    padding:1.5rem;
+    margin-top:1.5rem;
+    padding-top:2.5rem;
+    font-size:2rem;
+    color:#333;
+    border-top:.1rem solid rgba(0,0,0,.1)
+}
 
 
 
