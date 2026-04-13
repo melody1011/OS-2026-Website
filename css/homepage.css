@@ -84,11 +84,28 @@ header .icons a{
     font-size:2.5rem;
     color:#333;
     margin-left: 1.5rem;
+    position: relative;
 
 }
 
 header .icons a:hover{
     color:#4e6e58;
+}
+
+header .icons .cart-count{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #82AF90;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 header #toggler{
@@ -226,6 +243,64 @@ header .fa-bars{
     color:#5b5959;
     font-weight:lighter;
     text-decoration:line-through;
+}
+
+.marketplace .box-container .box .content .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+    border: 2px solid #82AF90;
+    border-radius: 25px;
+    padding: 0.5rem;
+    background: #f0f8f0;
+}
+
+.marketplace .box-container .box .content .quantity .qty-btn{
+    background: linear-gradient(135deg, #82AF90, #4e6e58);
+    color: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.marketplace .box-container .box .content .quantity .qty-btn:hover{
+    background: linear-gradient(135deg, #4e6e58, #82AF90);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.marketplace .box-container .box .content .quantity .qty-btn:active{
+    transform: scale(0.95);
+}
+
+.marketplace .box-container .box .content .quantity .qty{
+    width: 60px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0.5rem;
+    background: transparent;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.marketplace .box-container .box .content .quantity .qty:focus{
+    outline: none;
+    background: #fff;
+    box-shadow: inset 0 0 5px rgba(130, 175, 144, 0.5);
 }
 
 /*styling the news section*/
@@ -447,13 +522,53 @@ header .fa-bars{
         font-size:5rem;
     }
 }
-/*media query for mobile devices*/
-@media (max-width:450px){
-    html{
-        font-size:50%;
-    }
+/* Cart Styles */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
-    .heading{
-        font-size:3rem;
-    }
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.item-details p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-top: 2px solid #82AF90;
+}
+
+.cart-total h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
 }

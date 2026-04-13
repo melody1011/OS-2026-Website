@@ -10,6 +10,7 @@
 </head>
 <body>
 
+<?php session_start(); ?>
 
 <!--Header-->
 <header>
@@ -28,7 +29,9 @@
     </nav>
 
     <div class="icons">
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="cart.php" class="fas fa-shopping-cart">
+            <span class="cart-count"><?php echo array_sum(array_column($_SESSION['cart'] ?? [], 'quantity')); ?></span>
+        </a>
         <a href="../php/index.php" class="fas fa-user"></a>
     </div>
     
@@ -71,7 +74,17 @@
         <div class="content">
             <h3>Cheese</h3>
             <div class="price">£7.00<span>£14.00</span></div>
-            <a href="#" class="btn">Buy Now</a>
+            <form action="add_to_cart.php" method="post" class="add-to-cart-form">
+                <input type="hidden" name="name" value="Cheese">
+                <input type="hidden" name="price" value="7.00">
+                <input type="hidden" name="image" value="../images/cheese.webp">
+                <div class="quantity">
+                    <button type="button" class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" name="quantity" value="1" min="1" class="qty">
+                    <button type="button" class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                </div>
+                <button type="submit" class="btn">Add to Basket</button>
+            </form>
         </div>
         </div>
 
@@ -84,7 +97,17 @@
         <div class="content">
             <h3>Milk</h3>
             <div class="price">£3.00<span>£6.00</span></div>
-            <a href="#" class="btn">Learn More</a>
+            <form action="add_to_cart.php" method="post" class="add-to-cart-form">
+                <input type="hidden" name="name" value="Milk">
+                <input type="hidden" name="price" value="3.00">
+                <input type="hidden" name="image" value="../images/milk.png">
+                <div class="quantity">
+                    <button type="button" class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" name="quantity" value="1" min="1" class="qty">
+                    <button type="button" class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                </div>
+                <button type="submit" class="btn">Add to Basket</button>
+            </form>
         </div>
         </div>
 
@@ -98,8 +121,18 @@
             <div class="content">           
                 <h3>Butter</h3>
                 <div class="price">£4.00<span>£8.00</span></div>
-            <a href="#" class="btn">Learn More</a>
-        </div>
+                <form action="add_to_cart.php" method="post" class="add-to-cart-form">
+                    <input type="hidden" name="name" value="Butter">
+                    <input type="hidden" name="price" value="4.00">
+                    <input type="hidden" name="image" value="../images/butter.jpeg">
+                    <div class="quantity">
+                        <button type="button" class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                        <input type="number" name="quantity" value="1" min="1" class="qty">
+                        <button type="button" class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <button type="submit" class="btn">Add to Basket</button>
+                </form>
+            </div>
         </div> 
 </section>
 
@@ -162,6 +195,23 @@
 
     <div class="credit">© 2026 GLH. All rights reserved.</div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const qtyBtns = document.querySelectorAll('.qty-btn');
+    qtyBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const qtyInput = this.parentElement.querySelector('.qty');
+            let currentValue = parseInt(qtyInput.value);
+            if (this.classList.contains('plus')) {
+                qtyInput.value = currentValue + 1;
+            } else if (this.classList.contains('minus') && currentValue > 1) {
+                qtyInput.value = currentValue - 1;
+            }
+        });
+    });
+});
+</script>
 
 </body>
 </html>

@@ -70,7 +70,17 @@
         <div class="content">
             <h3>Lemon Juice</h3>
             <div class="price">£7.00<span>£14.00</span></div>
-            <a href="#" class="btn">Buy Now</a>
+            <form action="add_to_cart.php" method="post" class="add-to-cart-form">
+                <input type="hidden" name="name" value="Lemon Juice">
+                <input type="hidden" name="price" value="7.00">
+                <input type="hidden" name="image" value="../images/lemonjuice.webp">
+                <div class="quantity">
+                    <button type="button" class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" name="quantity" value="1" min="1" class="qty">
+                    <button type="button" class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                </div>
+                <button type="submit" class="btn">Add to Basket</button>
+                </form>
         </div>
         </div>
 
@@ -83,7 +93,18 @@
         <div class="content">
             <h3>Orange Juice</h3>
             <div class="price">£9.00<span>£18.00</span></div>
-            <a href="#" class="btn">Learn More</a>
+            <form action="add_to_cart.php" method="post" class="add-to-cart-form">
+                <input type="hidden" name="name" value="Orange Juice">
+                <input type="hidden" name="price" value="9.00">
+                <input type="hidden" name="image" value="../images/orangejuice.webp">
+                <div class="quantity">
+                    <button type="button" class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" name="quantity" value="1" min="1" class="qty">
+                    <button type="button" class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                </div>
+            <button type="submit" class="btn">Add to Basket</button>
+            </form>
+            
         </div>
         </div>
 
@@ -97,7 +118,17 @@
             <div class="content">           
                 <h3>Mango Juice</h3>
                 <div class="price">£6.00<span>£12.00</span></div>
-            <a href="#" class="btn">Learn More</a>
+                <form action="add_to_cart.php" method="post" class="add-to-cart-form">
+                <input type="hidden" name="name" value="Mango Juice">
+                <input type="hidden" name="price" value="6.00">
+                <input type="hidden" name="image" value="../images/mangojuice.webp">
+                <div class="quantity">
+                    <button type="button" class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                    <input type="number" name="quantity" value="1" min="1" class="qty">
+                    <button type="button" class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                </div>
+                <button type="submit" class="btn">Add to Basket</button>
+                </form>
         </div>
         </div> 
 </section>
@@ -161,6 +192,24 @@
 
     <div class="credit">© 2026 GLH. All rights reserved.</div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const qtyBtns = document.querySelectorAll('.qty-btn');
+    qtyBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const qtyInput = this.parentElement.querySelector('.qty');
+            let currentValue = parseInt(qtyInput.value);
+            if (this.classList.contains('plus')) {
+                qtyInput.value = currentValue + 1;
+            } else if (this.classList.contains('minus') && currentValue > 1) {
+                qtyInput.value = currentValue - 1;
+            }
+        });
+    });
+});
+</script>
+
 
 </body>
 </html>

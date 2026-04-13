@@ -28,7 +28,7 @@
     </nav>
 
     <div class="icons">
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="../php/cart.php" class="fas fa-shopping-cart"></a>
         <a href="../php/index.php" class="fas fa-user"></a>
     </div>
     
@@ -218,6 +218,8 @@
 
     <div class="credit">© 2026 GLH. All rights reserved.</div>
 </section>
+
+
 
 </body>
 </html>
