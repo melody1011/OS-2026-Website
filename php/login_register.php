@@ -34,8 +34,9 @@ if (isset($_POST['login'])) {
     if ($result->num_rows > 0) {
         $user = $result-> fetch_assoc();
         if(password_verify($password, $user['password'])) {
-            $_SESSION[''] = $user['name'];
-            $_SESSION[''] = $user['email'];
+            $_SESSION['user_name'] = $user['name'];
+            $_SESSION['user_email'] = $user['email'];
+            $_SESSION['user_role'] = $user['role'];
 
             if ($user['role'] === 'admin') {
                 header("Location: ../php/admin_dashboard.php");
