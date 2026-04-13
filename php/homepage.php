@@ -28,7 +28,9 @@
     </nav>
 
     <div class="icons">
-        <a href="../php/cart.php" class="fas fa-shopping-cart"></a>
+        <a href="../php/cart.php" class="fas fa-shopping-cart">
+            <span class="cart-count"><?php echo array_sum(array_column($_SESSION['cart'] ?? [], 'quantity')); ?></span>
+        </a>
         <a href="../php/index.php" class="fas fa-user"></a>
     </div>
     
