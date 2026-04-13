@@ -300,6 +300,7 @@ header .fa-bars{
     text-align:center;
 }
 
+
 /*styling the contact section*/
 .contact .row{
     display:flex;
@@ -333,7 +334,19 @@ header .fa-bars{
     border:.1rem solid rgba(0,0,0,.1);
     border-radius:.5rem;
     margin:.7rem 0;
+    width:100%;
 }
+
+.contact .row form .box:focus{
+    border-color:#D0E5D7;
+}
+
+.contact .row form textarea{
+    height:15rem;
+    resize:none;
+}
+
+
 
 /*footer styling*/
 .footer{

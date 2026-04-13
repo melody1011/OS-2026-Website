@@ -19,11 +19,11 @@
     <a href="homepage.php" class="logo"><img src="../images/logo.png" alt="Logo"></a>
 
     <nav class="navbar">
-        <a href="../php/homepage.php/#home">Home</a>
-        <a href="../php/homepage.php/#about">About</a>
-        <a href="../php/homepage.php/#marketplace">MarketPlace</a>
-        <a href="../php/homepage.php/#news">News</a>
-        <a href="../php/homepage.php/#events">Events</a>
+        <a href="../php/homepage.php">Home</a>
+        <a href="../php/homepage.php">About</a>
+        <a href="../php/homepage.php">MarketPlace</a>
+        <a href="../php/homepage.php">News</a>
+        <a href="../php/homepage.php">Events</a>
         
     </nav>
 
@@ -42,17 +42,18 @@
 <!-- About Section -->
 
 <section class="about" id="about">
-    <h1 class="heading">Seafood Produce</h1>
+    <h1 class="heading">Animal Protein</h1>
 
     <div class="row">
-        
         <div class="image">
-            <img src="../images/aboutusimg.webp" alt="About Us Image">
+            <img src="../images/animalprotein.webp" alt="About Us Image">
         </div>
 
         <div class="content">
-            <h3>Healthy&Fresh</h3>
-            <p>At Greenfield Local Hub, our mission is to create a vibrant and sustainable local economy by connecting consumers with local producers and businesses. We strive to promote the benefits of shopping locally, supporting small businesses, and fostering a sense of community. Our platform provides a convenient and accessible way for residents to discover and purchase products and services from their local area, while also encouraging economic growth and environmental sustainability.</p>
+            <h3>BigUp Protein</h3>
+            <p>Discover the finest animal proteins sourced from local farms. We are committed to providing high-quality, sustainably raised meat and poultry to your doorstep.<br></br>
+            Our proteins are carefully selected to ensure they meet our strict standards for taste, texture, and nutritional value. Whether you're looking for juicy beef, tender chicken, or flavorful pork, we have a wide variety of options to satisfy your cravings.<br>
+            </p>
         </div>
     </div>
 </section>
@@ -64,22 +65,25 @@
         <div class="box">
             <span class="discount">-50% Off</span>
             <div class="image">
-            <img src="../images/freshproduce.webp" alt="Product Image">
+            <img src="../images/chicken.webp" alt="Product Image">
         </div>
         
         <div class="content">
-            <h3>Fresh Produce</h3>
-            <a href="#" class="btn">Learn more</a>
+            <h3>Chicken</h3>
+            <div class="price">£15.00<span>£30.00</span></div>
+            <a href="#" class="btn">Buy Now</a>
         </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="../images/seafood.jpg" alt="Product Image">
+                <span class="discount">-50% Off</span>
+                <img src="../images/steak.jpeg" alt="Product Image">
             </div>
 
         <div class="content">
-            <h3>Seafood Produce</h3>
+            <h3>Steak</h3>
+            <div class="price">£16.00<span>£32.00</span></div>
             <a href="#" class="btn">Learn More</a>
         </div>
         </div>
@@ -87,24 +91,44 @@
 
         <div class="box">
             <div class="image">
-                <img src="../images/animalprotein.webp" alt="Product Image">
+                <span class="discount">-50% Off</span>
+                <img src="../images/salmon.webp" alt="Product Image">
             </div>
 
             <div class="content">           
-                <h3>Animal Protein</h3>
+                <h3>Salmon</h3>
+                <div class="price">£12.00<span>£24.00</span></div>
             <a href="#" class="btn">Learn More</a>
         </div>
         </div> 
 </section>
 
+<section class="contact" id="contact">
+
+    <h1 class="heading">Contact Us</h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Phone Number" class="box">
+            <textarea name="" placeholder="Message" class="box" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+
+        </form>
+
+        <div class="image">
+            <img src="../images/logo.png" alt="Contact Us Image">
+    
+        </div>
+        
+    </div>
+</section>
+
 <!--Footer-->
 
 <section class="footer">
-
-    <div class="row">
-        <div class="image">
-            <img src="../images/logo.png" alt="About Us Image">
-        </div>
 
     <div class="box-container">
 

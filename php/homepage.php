@@ -75,7 +75,7 @@
         
         <div class="content">
             <h3>Fresh Produce</h3>
-            <a href="../html/freshproduce.html" class="btn">Learn more</a>
+            <a href="../php/freshproduce.php" class="btn">Learn more</a>
         </div>
         </div>
 
@@ -86,7 +86,7 @@
 
         <div class="content">
             <h3>Seafood Produce</h3>
-            <a href="#" class="btn">Learn More</a>
+            <a href="../php/seafood.php" class="btn">Learn More</a>
         </div>
         </div>
 
@@ -98,7 +98,7 @@
 
             <div class="content">           
                 <h3>Animal Protein</h3>
-            <a href="#" class="btn">Learn More</a>
+            <a href="../php/animalprotein.php" class="btn">Learn More</a>
         </div>
         </div> 
 
@@ -109,7 +109,7 @@
 
             <div class="content">
             <h3>Beverages</h3>
-            <a href="#" class="btn">Learn More</a>
+            <a href="../php/beverages.php" class="btn">Learn More</a>
         </div>
         </div>
 
@@ -120,7 +120,7 @@
 
             <div class="content">
             <h3>Bakery &  Grains</h3>
-            <a href="#" class="btn">Learn More</a>
+            <a href="../php/bakery.php" class="btn">Learn More</a>
         </div>
         </div>
 
@@ -131,7 +131,7 @@
 
             <div class="content">
             <h3>Dairy</h3>
-            <a href="#" class="btn">Learn More</a>
+            <a href="../php/dairy.php" class="btn">Learn More</a>
         </div>
 
     </div>
