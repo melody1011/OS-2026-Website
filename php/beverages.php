@@ -16,19 +16,21 @@
 <!--Logo and Navigation Bar-->
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas fa-bars"></label>
-    <a href="homepage.php" class="logo"><img src="../images/logo.png" alt="Logo"></a>
+    <a href="user_page.php" class="logo"><img src="../images/logo.png" alt="Logo"></a>
 
     <nav class="navbar">
-        <a href="../php/homepage.php">Home</a>
-        <a href="../php/homepage.php">About</a>
-        <a href="../php/homepage.php">MarketPlace</a>
-        <a href="../php/homepage.php">News</a>
-        <a href="../php/homepage.php">Events</a>
+        <a href="../php/user_page.php">Home</a>
+        <a href="../php/user_page.php">About</a>
+        <a href="../php/user_page.php">MarketPlace</a>
+        <a href="../php/user_page.php">News</a>
+        <a href="../php/user_page.php">Events</a>
         
     </nav>
 
     <div class="icons">
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="cart.php" class="fas fa-shopping-cart">
+            <span class="cart-count"><?php echo array_sum(array_column($_SESSION['cart'] ?? [], 'quantity')); ?></span>
+        </a>
         <a href="../php/index.php" class="fas fa-user"></a>
     </div>
     

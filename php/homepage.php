@@ -77,7 +77,7 @@
         
         <div class="content">
             <h3>Fresh Produce</h3>
-            <a href="../php/freshproduce.php" class="btn">Learn more</a>
+            <a href="../php/index.php" class="btn">Learn more</a>
         </div>
         </div>
 
@@ -88,7 +88,7 @@
 
         <div class="content">
             <h3>Seafood Produce</h3>
-            <a href="../php/seafood.php" class="btn">Learn More</a>
+            <a href="../php/index.php" class="btn">Learn More</a>
         </div>
         </div>
 
@@ -100,7 +100,7 @@
 
             <div class="content">           
                 <h3>Animal Protein</h3>
-            <a href="../php/animalprotein.php" class="btn">Learn More</a>
+            <a href="../php/index.php" class="btn">Learn More</a>
         </div>
         </div> 
 
@@ -111,7 +111,7 @@
 
             <div class="content">
             <h3>Beverages</h3>
-            <a href="../php/beverages.php" class="btn">Learn More</a>
+            <a href="../php/index.php" class="btn">Learn More</a>
         </div>
         </div>
 
@@ -122,7 +122,7 @@
 
             <div class="content">
             <h3>Bakery &  Grains</h3>
-            <a href="../php/bakery.php" class="btn">Learn More</a>
+            <a href="../php/index.php" class="btn">Learn More</a>
         </div>
         </div>
 
@@ -133,7 +133,7 @@
 
             <div class="content">
             <h3>Dairy</h3>
-            <a href="../php/dairy.php" class="btn">Learn More</a>
+            <a href="../php/index.php" class="btn">Learn More</a>
         </div>
 
     </div>
@@ -148,7 +148,7 @@
 
         <div class="box">
         <div class="content">
-            <h3>15% Discount on ALL products</h3>
+            <h3>50% Discount on ALL products</h3>
             <p> Limited time offer, use it while you still can!</p>
         </div>
         </div>
