@@ -471,57 +471,6 @@ header .fa-bars{
     border-top:.1rem solid rgba(0,0,0,.1)
 }
 
-/* Cart Styles */
-.cart-items {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #f9f9f9;
-}
-
-.cart-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.item-details {
-    flex: 1;
-}
-
-.item-details h3 {
-    margin: 0 0 1rem 0;
-    color: #333;
-}
-
-.item-details p {
-    margin: 0.5rem 0;
-    color: #666;
-}
-
-.cart-total {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 2rem;
-    border-top: 2px solid #82AF90;
-}
-
-.cart-total h3 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
 
 /*media queries*/
 @media (max-width:991px) {

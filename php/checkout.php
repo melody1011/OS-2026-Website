@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
@@ -44,34 +44,54 @@ foreach ($cart as $item) {
 </header>
 
 <!-- Checkout Section -->
-<section class="about" id="about">
-    <h1 class="heading">Checkout</h1>
-
-    <div class="row">
-        <div class="content">
-            <h3>Total: £<?php echo number_format($total, 2); ?></h3><!-- Display total price -->
-            <p>Thank you for your order!</p>
+<section class="checkout-section">
+    <div class="checkout-container">
+        <h1 class="heading">Checkout</h1>
+        <div class="checkout-total">Total: £<?php echo number_format($total, 2); ?></div>
+        <p class="checkout-message">Thank you for your order!</p>
+        <div class="checkout-actions">
             <a href="homepage.php" class="btn">Back to Home</a>
+            <a href="cart.php" class="btn secondary">Back to Cart</a>
         </div>
     </div>
 </section>
 
 <!--Footer-->
 <section class="footer">
+
     <div class="box-container">
+
         <div class="box">
             <h3>Quick Links</h3>
-            <a href="../php/homepage.php">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#marketplace">Marketplace</a>
             <a href="#news">News</a>
             <a href="#events">Events</a>
-            <a href="cart.php">Basket</a>
+            <a href="#">Basket</a>
             <a href="../php/index.php">Account</a>
         </div>
+
+        <div class="box">
+            <h3>Legal & Trust</h3>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Cookies</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Us</h3>
+            <a href="mailto:GLH@gmail.com">GLH@gmail.com</a>
+            <a href="tel:07564293927">07564293927</a>
+            <a href="#">Facebook: @GLH_UK</a>
+            <a href="#">Instagram: @GLH_UK</a>
+        </div>
     </div>
+
     <div class="credit">© 2026 GLH. All rights reserved.</div>
 </section>
+
 
 </body>
 </html>
