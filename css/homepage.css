@@ -245,6 +245,7 @@ header .fa-bars{
     text-decoration:line-through;
 }
 
+/*styling the quantity selector in the marketplace section*/
 .marketplace .box-container .box .content .quantity{
     display: flex;
     align-items: center;
@@ -257,6 +258,7 @@ header .fa-bars{
     background: #f0f8f0;
 }
 
+/* Styling the quantity buttons */
 .marketplace .box-container .box .content .quantity .qty-btn{
     background: linear-gradient(135deg, #82AF90, #4e6e58);
     color: #fff;
@@ -273,6 +275,7 @@ header .fa-bars{
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+/* Add hover and active states for quantity buttons */
 .marketplace .box-container .box .content .quantity .qty-btn:hover{
     background: linear-gradient(135deg, #4e6e58, #82AF90);
     transform: scale(1.1);
@@ -283,10 +286,11 @@ header .fa-bars{
     transform: scale(0.95);
 }
 
+/* Styling the quantity input field */
 .marketplace .box-container .box .content .quantity .qty{
     width: 60px;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bold;
     border: none;
     border-radius: 0;
@@ -297,6 +301,7 @@ header .fa-bars{
     transition: background 0.3s ease;
 }
 
+/* Remove default input focus styles and add custom focus styles */
 .marketplace .box-container .box .content .quantity .qty:focus{
     outline: none;
     background: #fff;
@@ -466,8 +471,56 @@ header .fa-bars{
     border-top:.1rem solid rgba(0,0,0,.1)
 }
 
+/* Cart Styles */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
 
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.item-details p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-top: 2px solid #82AF90;
+}
+
+.cart-total h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
 
 
 /*media queries*/
@@ -521,54 +574,4 @@ header .fa-bars{
     .home .content h3{
         font-size:5rem;
     }
-}
-/* Cart Styles */
-.cart-items {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #f9f9f9;
-}
-
-.cart-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.item-details {
-    flex: 1;
-}
-
-.item-details h3 {
-    margin: 0 0 1rem 0;
-    color: #333;
-}
-
-.item-details p {
-    margin: 0.5rem 0;
-    color: #666;
-}
-
-.cart-total {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 2rem;
-    border-top: 2px solid #82AF90;
-}
-
-.cart-total h3 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
 }

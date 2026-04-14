@@ -36,7 +36,7 @@ foreach ($cart as $item) {
 
     <div class="icons">
         <a href="cart.php" class="fas fa-shopping-cart">
-            <span class="cart-count"><?php echo array_sum(array_column($cart, 'quantity')); ?></span>
+            <span class="cart-count"><?php echo array_sum(array_column($cart, 'quantity')); ?></span><!-- Display total quantity in cart -->
         </a>
         <a href="../php/index.php" class="fas fa-user"></a>
     </div>
@@ -50,24 +50,24 @@ foreach ($cart as $item) {
 
 <section class="about" id="about">
     <h1 class="heading">Shopping Cart</h1>
-
+<!-- Cart Items -->
     <div class="row">
         <div class="content">
             <?php if (empty($cart)): ?>
                 <p>Your cart is empty.</p>
                 <a href="freshproduce.php" class="btn">Continue Shopping</a>
             <?php else: ?>
-                <div class="cart-items">
+                <div class="cart-items"><!-- Display cart items -->
                     <?php foreach ($cart as $index => $item): ?>
                         <div class="cart-item">
                             <img src="<?php echo $item['image']; ?>" alt="<?php echo $item['name']; ?>" width="100">
                             <div class="item-details">
-                                <h3><?php echo $item['name']; ?></h3>
-                                <p>Price: £<?php echo number_format($item['price'], 2); ?></p>
-                                <p>Quantity: <?php echo $item['quantity']; ?></p>
-                                <p>Subtotal: £<?php echo number_format($item['price'] * $item['quantity'], 2); ?></p>
+                                <h3><?php echo $item['name']; ?></h3><!-- Display item name -->
+                                <p>Price: £<?php echo number_format($item['price'], 2); ?></p><!-- Display item price -->
+                                <p>Quantity: <?php echo $item['quantity']; ?></p><!-- Display item quantity -->
+                                <p>Subtotal: £<?php echo number_format($item['price'] * $item['quantity'], 2); ?></p><!-- Display item subtotal -->
                             </div>
-                            <form action="update_cart.php" method="post" style="display: inline;">
+                            <form action="update_cart.php" method="post" style="display: inline;"><!-- Form to remove item from cart -->
                                 <input type="hidden" name="index" value="<?php echo $index; ?>">
                                 <button type="submit" name="action" value="remove" class="btn">Remove</button>
                             </form>
@@ -75,7 +75,7 @@ foreach ($cart as $item) {
                     <?php endforeach; ?>
                 </div>
                 <div class="cart-total">
-                    <h3>Total: £<?php echo number_format($total, 2); ?></h3>
+                    <h3>Total: £<?php echo number_format($total, 2); ?></h3><!-- Display total price -->   
                     <a href="checkout.php" class="btn">Proceed to Checkout</a>
                 </div>
             <?php endif; ?>

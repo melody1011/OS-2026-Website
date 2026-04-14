@@ -36,20 +36,21 @@ foreach ($cart as $item) {
 
     <div class="icons">
         <a href="cart.php" class="fas fa-shopping-cart">
-            <span class="cart-count"><?php echo array_sum(array_column($cart, 'quantity')); ?></span>
+            <span class="cart-count"><?php echo array_sum(array_column($cart, 'quantity')); ?></span><!-- Display total quantity in cart -->
         </a>
         <a href="../php/index.php" class="fas fa-user"></a>
     </div>
     
 </header>
 
+<!-- Checkout Section -->
 <section class="about" id="about">
     <h1 class="heading">Checkout</h1>
 
     <div class="row">
         <div class="content">
-            <h3>Total: £<?php echo number_format($total, 2); ?></h3>
-            <p>Thank you for your order! This is a demo, so no actual payment processing.</p>
+            <h3>Total: £<?php echo number_format($total, 2); ?></h3><!-- Display total price -->
+            <p>Thank you for your order!</p>
             <a href="homepage.php" class="btn">Back to Home</a>
         </div>
     </div>

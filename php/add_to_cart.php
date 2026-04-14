@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+// Handle adding to cart
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
     $price = $_POST['price'];
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             break;
         }
     }
-
+    // If not found, add new item to cart
     if (!$found) {
         $_SESSION['cart'][] = [
             'name' => $name,
