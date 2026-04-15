@@ -50,7 +50,7 @@ foreach ($cart as $item) {
         <div class="checkout-total">Total: £<?php echo number_format($total, 2); ?></div>
         <p class="checkout-message">Thank you for your order!</p>
         <div class="checkout-actions">
-            <a href="homepage.php" class="btn">Back to Home</a>
+            <a href="user_page.php" class="btn">Back to Home</a>
             <a href="cart.php" class="btn secondary">Back to Cart</a>
         </div>
     </div>

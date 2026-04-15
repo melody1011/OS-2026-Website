@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$cart = $_SESSION['cart'] ?? [];
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,9 +39,11 @@
     
 </header>
 
+
+
 <div class="container">
 
-    <form action="">
+    <form action="checkout.php" method="post">
 
         <div class="row">
             
@@ -60,18 +66,18 @@
                 </div>
 
                 <div class="inputBox">
-                    <span>City: </span>
-                    <input type="text" placeholder="London">
+                    <span>Delivery/Pickup: </span>
+                    <input type="text" placeholder="Delivery">
                 </div>
 
                 <div class="inputBox">
                     <span>Postcode: </span>
                     <input type="text" placeholder="123 456">
                 </div>
+            </div>
+            
 
-
-
-                <div class="col">
+             <div class="col">
                 <h3 class="title">Payment</h3>
 
                 <div class="inputBox">
@@ -79,7 +85,7 @@
                     <input type="text" placeholder="Mr. example">
                 </div>
                 <div class="inputBox">
-                    <span>Creditcard Number: </span>
+                    <span>Credit card Number: </span>
                     <input type="number" placeholder="1111-2222-3333-4444">
                 </div>
                 <div class="inputBox">
@@ -98,9 +104,7 @@
 
         </div>
 
-    </div>
-
-    <input type="submit" value="Proceed to checkout" class="submit-btn">
+        <button type="submit" class="submit-btn">Proceed to checkout</button>
 
     </form>
 </div>

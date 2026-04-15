@@ -55,7 +55,7 @@ foreach ($cart as $item) {
         <div class="content">
             <?php if (empty($cart)): ?>
                 <p class="empty-cart-message">Your cart is empty.</p>
-                <a href="../php/homepage.php" class="btn">Continue Shopping</a>
+                <a href="../php/user_page.php" class="btn">Continue Shopping</a>
             <?php else: ?>
                 <div class="cart-items"><!-- Display cart items -->
                     <?php foreach ($cart as $index => $item): ?>
@@ -76,7 +76,7 @@ foreach ($cart as $item) {
                 </div>
                 <div class="cart-total">
                     <h3>Total: £<?php echo number_format($total, 2); ?></h3><!-- Display total price -->   
-                    <a href="../php/checkout.php" class="btn">Proceed to Checkout</a>
+                    <a href="../php/payment.php" class="btn">Proceed to Checkout</a>
                 </div>
             <?php endif; ?>
         </div>
