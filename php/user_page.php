@@ -20,7 +20,6 @@
 
     <nav class="navbar">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
         <a href="#marketplace">MarketPlace</a>
         <a href ="#news">News</a>
         <a href="#events">Events</a>
@@ -45,22 +44,6 @@
 
 </section>
 
-<!-- About Section -->
-
-<section class="about" id="about">
-    <h1 class="heading">About Us</h1>
-
-    <div class="row">
-        <div class="image">
-            <img src="../images/aboutusimg.webp" alt="About Us Image">
-        </div>
-
-        <div class="content">
-            <h3>Our Mission</h3>
-            <p>At Greenfield Local Hub, our mission is to create a vibrant and sustainable local economy by connecting consumers with local producers and businesses. We strive to promote the benefits of shopping locally, supporting small businesses, and fostering a sense of community. Our platform provides a convenient and accessible way for residents to discover and purchase products and services from their local area, while also encouraging economic growth and environmental sustainability.</p>
-        </div>
-    </div>
-</section>
 
 <!-- Marketplace Section -->
 

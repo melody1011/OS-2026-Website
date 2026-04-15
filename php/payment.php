@@ -22,7 +22,6 @@ $cart = $_SESSION['cart'] ?? [];
 
     <nav class="navbar">
         <a href="../php/homepage.php">Home</a>
-        <a href="#about">About</a>
         <a href="#marketplace">MarketPlace</a>
         <a href="#news">News</a>
         <a href="#events">Events</a>

@@ -22,13 +22,13 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#marketplace">MarketPlace</a>
-        <a href ="#news">News</a>
-        <a href="#events">Events</a>
+        <a href ="#news">Delivery Info</a>
+        <a href="#events">Reviews</a>
         
     </nav>
 
     <div class="icons">
-        <a href="../php/cart.php" class="fas fa-shopping-cart">
+        <a href="../php/index.php" class="fas fa-shopping-cart">
             <span class="cart-count"><?php echo array_sum(array_column($_SESSION['cart'] ?? [], 'quantity')); ?></span>
         </a>
         <a href="../php/index.php" class="fas fa-user"></a>
@@ -142,21 +142,21 @@
 <!--News Section-->
 
 <section class="news" id="news">
-    <h1 class="heading">News of the Week</h1>
+    <h1 class="heading">Delivery Information</h1>
     
     <div class="box-container">
 
         <div class="box">
         <div class="content">
-            <h3>50% Discount on ALL products</h3>
-            <p> Limited time offer, use it while you still can!</p>
+            <h3>Want Delivery? Register now to deliver prodcuts to your home</h3>
+            <p> Any enquiries, please call or email us!</p>
         </div>
         </div>
 
         <div class="box">
         <div class="content">
-            <h3>Free Shipping on Orders Over £50</h3>
-            <p> Take this opprotunity, shipping is on us!</p>
+            <h3>Want to pick up your order? You are more than welcome to</h3>
+            <p> Any enquiries, please call or email us!</p>
         </div>
 
         </div>
@@ -166,19 +166,29 @@
 
 </section>
 
-<section class="events" id="events">
-    <h1 class="heading">Events Of the Week</h1>
+<section class="marketplace" id="events">
+    <h1 class="heading">Reviews</h1>
 
     <div class="box-container">
 
         <div class="box">
-
-        <div class="content">
-            <h3>No Current Events</h3>
-            <p> Check back soon for updates!</p>
+            <div class="image">
+            <img src="../images/" alt="Product Image">
         </div>
 
         </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../images/" alt="Product Image">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../images/" alt="Product Image">
+            </div>
+        </div> 
 
     </div>
 </section>
@@ -195,9 +205,9 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#marketplace">Marketplace</a>
-            <a href="#news">News</a>
-            <a href="#events">Events</a>
-            <a href="#">Basket</a>
+            <a href="#news">Delivery Info</a>
+            <a href="#events">Reviews</a>
+            <a href="../php/index.php">Basket</a>
             <a href="../php/index.php">Account</a>
         </div>
 
@@ -221,7 +231,29 @@
     <div class="credit">© 2026 GLH. All rights reserved.</div>
 </section>
 
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent" class="cookie-banner">
+    <div class="cookie-content">
+        <i class="fas fa-cookie-bite"></i>
+        <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</p>
+        <button id="accept-cookies" class="btn">Accept</button>
+    </div>
+</div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const cookieBanner = document.getElementById('cookie-consent');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    // Show the banner on page load
+    cookieBanner.style.display = 'block';
+
+    // Hide the banner when accept is clicked
+    acceptBtn.addEventListener('click', function() {
+        cookieBanner.style.display = 'none';
+    });
+});
+</script>
 
 </body>
 </html>

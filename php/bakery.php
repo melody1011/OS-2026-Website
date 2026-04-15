@@ -21,7 +21,6 @@
 
     <nav class="navbar">
         <a href="../php/homepage.php">Home</a>
-        <a href="../php/homepage.php">About</a>
         <a href="../php/homepage.php">MarketPlace</a>
         <a href="../php/homepage.php">News</a>
         <a href="../php/homepage.php">Events</a>
@@ -168,7 +167,6 @@
         <div class="box">
             <h3>Quick Links</h3>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
             <a href="#marketplace">Marketplace</a>
             <a href="#news">News</a>
             <a href="#events">Events</a>
