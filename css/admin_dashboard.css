@@ -208,8 +208,8 @@ header .fa-bars{
 
 .stock .date{
     display:inline-block;
-    background:#82AF90;
-    border-radius:5px;
+    background:#c7c7c7;
+    border-radius:3px;
     margin-top:1rem;
     padding: 0.5rem 1.6rem;
 }
@@ -223,11 +223,11 @@ header .fa-bars{
 .stock .insights {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
-    gap:1.6rem;
+    gap:2rem;
 }
 
 .stock .insights > div {
-    background:#82AF90;
+    background:#e3e3e3;
     padding:5px;
     border-radius:5px;
     margin-top:1rem;
@@ -244,8 +244,138 @@ header .fa-bars{
     padding:0.5rem;
     border-radius:50%;
     color:#fff;
+    font-size:3rem;
+}
+
+.stock .insights > div.expenses span{
+    background:#829eaf;
+}
+
+.stock .insights > div.income span{
+    background:#8282af;
+}
+
+.stock .insights > div .middle{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.stock .insights h3{
+    margin:1rem 0 0.6rem;
     font-size:2rem;
 }
+
+.stock .insights .progress{
+    position:relative;
+    width:92px;
+    height:92px;
+    border-radius:50%;
+}
+
+.stock .insights svg{
+    width:10rem;
+    height:10rem;
+}
+
+.stock .insights svg circle{
+    fill:none;
+    stroke: #4e6e58;
+    stroke-width:14;
+    stroke-linecap:round;
+    transform:translate(5px, 5px);
+    stroke-dasharray:110;
+    stroke-dashoffset: 92;
+}
+
+.stock .insights .sales svg circle{
+    stroke-dashoffset:-30;
+    stroke-dasharray:200;
+}
+
+.stock .insights .expenses svg circle{
+    stroke-dashoffset:20;
+    stroke-dasharray:80;
+}
+
+.stock .insights .income svg circle{
+    stroke-dashoffset:110;
+    stroke-dasharray:35;
+}
+
+.stock .insights .progress .number{
+    font-size:20px;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.stock .insights small{
+    margin-top:1.3rem;
+    display:block;
+}
+
+.stock .insights .text-muted{
+    font-size:13px;
+}
+
+/*Order css styling*/
+
+.order .recent-order{
+    margin-top:2rem;
+}
+
+.order .recent-order h2{
+    margin-bottom:0.8rem;
+}
+
+.order .recent-order table{
+    background:#e4e4e4;
+    height:50%;
+    width:100%;
+    border-radius:var(--card-border-radius);
+    padding:var(--card-padding);
+    text-align:center;
+    box-shadow:var(--box-shadow);
+    transition:5s;
+}
+
+.order .rcent-order table:hover{
+    box-shadow:none;
+}
+
+.order table tbody td{
+    height:2.8rem;
+    border-bottom:1px solid #c7c7c7;
+}
+
+.order rable tbody tr:last-child{
+    border:none;
+}
+
+.order .recent-order a{
+    text-align:center;
+    display:block;
+    color:#4e6e58;
+}
+.order .recent-order .warning{
+    color:#e48c00;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
