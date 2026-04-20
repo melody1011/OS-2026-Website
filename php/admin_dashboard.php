@@ -239,7 +239,7 @@ $conn->close();
             <thead>
                 <tr>
                     <th>Product Name</th>
-                    <th>Product Number</th>
+                    <th>Delivery</th>
                     <th>Payment</th>
                     <th>Status</th>
                     <th></th>
@@ -248,35 +248,35 @@ $conn->close();
             </tbody>
                 <tr>
                     <td>-</td>
-                    <td>85631</td>
+                    <td>Deliver</td>
                     <td>Due</td>
                     <td class="warning">Pending</td>
                     <td class="primary">Details</td>
                 </tr>
                 <tr>
                     <td>-</td>
-                    <td>85631</td>
+                    <td>Pickup</td>
                     <td>Due</td>
                     <td class="warning">Pending</td>
                     <td class="primary">Details</td>
                 </tr>
                 <tr>
                     <td>-</td>
-                    <td>85631</td>
+                    <td>Pickup</td>
                     <td>Due</td>
                     <td class="warning">Pending</td>
                     <td class="primary">Details</td>
                 </tr>
                 <tr>
                     <td>-</td>
-                    <td>85631</td>
+                    <td>Deliver</td>
                     <td>Due</td>
                     <td class="warning">Pending</td>
                     <td class="primary">Details</td>
                 </tr>
                 <tr>
                     <td>-</td>
-                    <td>85631</td>
+                    <td>Deliver</td>
                     <td>Due</td>
                     <td class="warning">Pending</td>
                     <td class="primary">Details</td>

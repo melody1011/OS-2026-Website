@@ -148,7 +148,7 @@
 
         <div class="box">
         <div class="content">
-            <h3>Want Delivery? Register now to deliver prodcuts to your home</h3>
+            <h3>Want Delivery? Register now to deliver products to your home</h3>
             <p> Any enquiries, please call or email us!</p>
         </div>
         </div>
@@ -158,10 +158,23 @@
             <h3>Want to pick up your order? You are more than welcome to</h3>
             <p> Any enquiries, please call or email us!</p>
         </div>
+        </div>
 
+        <div class="box">
+            <div class="content">
+            <h3>Home delivery Procedure</h3>
+            <img src="../images/delivery.png">
         </div>
-    
         </div>
+
+        <div class="box">
+            <div class="content">
+            <h3>Pick-up Procedure</h3>
+            <img src="../images/pickup.png">
+        </div>
+        </div>
+
+    </div>
    
 
 </section>
@@ -173,20 +186,20 @@
 
         <div class="box">
             <div class="image">
-            <img src="../images/" alt="Product Image">
+            <img src="../images/review1.png" alt="Product Image">
         </div>
 
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="../images/" alt="Product Image">
+                <img src="../images/review2.png" alt="Product Image">
             </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="../images/" alt="Product Image">
+                <img src="../images/review3.png" alt="Product Image">
             </div>
         </div> 
 
@@ -237,6 +250,7 @@
         <i class="fas fa-cookie-bite"></i>
         <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</p>
         <button id="accept-cookies" class="btn">Accept</button>
+        <button id="reject-cookies" class="btn">Reject</button>
     </div>
 </div>
 
