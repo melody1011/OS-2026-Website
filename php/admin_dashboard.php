@@ -232,11 +232,12 @@ $conn->close();
 </section>
 <!--END OF INSIGHTS-->
 
+<!--ORDER SECTION-->
 <section class="order" id="order">
     <h1 class="heading">Orders</h1>
     <div class="recent-order">
-        <table>
-            <thead>
+        <table><!--Creates a table outline-->
+            <thead><!--The titles of each column in the table-->
                 <tr>
                     <th>Product Name</th>
                     <th>Delivery</th>
@@ -298,6 +299,22 @@ $conn->close();
             <a href="#stock">Stock Level</a>
             <a href="#marketplace">Orders</a>
             <a href="?logout=1">Logout</a>
+        </div>
+
+        <div class="box">
+            <h3>Legal & Trust</h3>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Cookies</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Us</h3>
+            <a href="mailto:GLH@gmail.com">GLH@gmail.com</a>
+            <a href="tel:07564293927">07564293927</a>
+            <a href="#">Facebook: @GLH_UK</a>
+            <a href="#">Instagram: @GLH_UK</a>
         </div>
     </div>
     <div class="credit">© 2026 GLH. All rights reserved.</div>

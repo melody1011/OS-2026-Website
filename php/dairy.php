@@ -46,7 +46,7 @@
 
 <section class="about" id="about">
     <h1 class="heading">Dairy</h1>
-
+    <!--Select image-->
     <div class="row">
         <div class="image">
             <img src="../images/dairy.webp" alt="About Us Image">
@@ -61,10 +61,11 @@
     </div>
 </section>
 
+<!--MARKETPLACE SECTION-->
 <section class="marketplace" id="marketplace">
 
     <div class="box-container">
-
+    <!--Select image-->
         <div class="box">
             <span class="discount">-50% Off</span>
             <div class="image">
@@ -87,7 +88,7 @@
             </form>
         </div>
         </div>
-
+    <!--Select image-->
         <div class="box">
             <div class="image">
                 <span class="discount">-50% Off</span>
@@ -111,7 +112,7 @@
         </div>
         </div>
 
-
+    <!--Select image-->
         <div class="box">
             <div class="image">
                 <span class="discount">-50% Off</span>
@@ -136,6 +137,7 @@
         </div> 
 </section>
 
+<!--CONTACT SECTION-->
 <section class="contact" id="contact">
 
     <h1 class="heading">Contact Us</h1>

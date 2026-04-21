@@ -532,7 +532,7 @@ header .fa-bars{
     left: 0;
     right: 0;
     background: #82AF90;
-    color: #000000;
+    color: #ffffff;
     padding: 1rem;
     display: none; /* Hidden by default, shown by JS */
     z-index: 1000;
@@ -554,7 +554,7 @@ header .fa-bars{
 
 .cookie-content p {
     flex: 1;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .cookie-banner .btn {

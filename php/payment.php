@@ -13,7 +13,7 @@ $cart = $_SESSION['cart'] ?? [];
 </head>
 <body>
 
-    <!--Header-->
+<!--Header-->
 <header>
 <!--Logo and Navigation Bar-->
     <input type="checkbox" name="" id="toggler">
@@ -38,14 +38,13 @@ $cart = $_SESSION['cart'] ?? [];
     
 </header>
 
-
-
+<!--CHECKOUT SECTION-->
 <div class="container">
 
     <form action="checkout.php" method="post">
 
         <div class="row">
-            
+            <!--BILLING SECTION-->
             <div class="col">
                 <h3 class="title">Billing Address</h3>
 
@@ -75,7 +74,7 @@ $cart = $_SESSION['cart'] ?? [];
                 </div>
             </div>
             
-
+            <!--PAYMENT SECTION-->
              <div class="col">
                 <h3 class="title">Payment</h3>
 

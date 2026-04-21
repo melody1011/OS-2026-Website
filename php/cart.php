@@ -48,6 +48,7 @@ foreach ($cart as $item) {
 </br>
 </br>
 
+<!--SHOPPING CART SECTION-->
 <section class="about" id="about">
     <h1 class="heading">Shopping Cart</h1>
 <!-- Cart Items -->

@@ -23,7 +23,7 @@
         <a href="#marketplace">MarketPlace</a>
         <a href ="#news">News</a>
         <a href="#events">Events</a>
-        
+        <a href="../php/homepage.php">Logout</a>
     </nav>
 
     <div class="icons">

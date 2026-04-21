@@ -248,7 +248,7 @@
 <div id="cookie-consent" class="cookie-banner">
     <div class="cookie-content">
         <i class="fas fa-cookie-bite"></i>
-        <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</p>
+        <p>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</br>This also agrees to our Terms And Conditions.</p>
         <button id="accept-cookies" class="btn">Accept</button>
         <button id="reject-cookies" class="btn">Reject</button>
     </div>
