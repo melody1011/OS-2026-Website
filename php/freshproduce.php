@@ -55,7 +55,11 @@
         <div class="content">
             <h3>Healthy & Fresh</h3>
             <p>Our fresh produce is sourced locally and delivered to your doorstep, ensuring the highest quality and freshness. We are committed to providing nutritious options that support a healthy lifestyle.<br>
-                Our aim is to make it easy for you to access fresh fruits and vegetables, while also supporting local farmers and reducing our carbon footprint. With our convenient online platform, you can enjoy the benefits of fresh produce without leaving your home. Join us in promoting a healthier lifestyle and a more sustainable future by choosing our fresh produce today.</p>
+                Our aim is to make it easy for you to access fresh fruits and vegetables, while also supporting local farmers and reducing our carbon footprint. With our convenient online platform, you can enjoy the benefits of fresh produce without leaving your home. Join us in promoting a healthier lifestyle and a more sustainable future by choosing our fresh produce today.
+</br></br> Benefits:</br>
+            - Retains more vitamins</br>
+            - Intense flavour</br>
+            - reduces the carbon footprint associated with transportation</br> 
             </p>
         </div>
     </div>

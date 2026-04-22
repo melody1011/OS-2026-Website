@@ -57,8 +57,15 @@
         </div>
 
         <div class="content">
-            <h3>Our Mission</h3>
-            <p>At Greenfield Local Hub, our mission is to create a vibrant and sustainable local economy by connecting consumers with local producers and businesses. We strive to promote the benefits of shopping locally, supporting small businesses, and fostering a sense of community. Our platform provides a convenient and accessible way for residents to discover and purchase products and services from their local area, while also encouraging economic growth and environmental sustainability.</p>
+            <h3>Greenfield Local Hub</h3>
+</br><p>Who are We?</p>
+            <p>At Greenfield Local Hub, our mission is to create a vibrant and sustainable local economy by connecting consumers with local producers and businesses. We strive to promote the benefits of shopping locally, supporting small businesses, and fostering a sense of community. Our platform provides a convenient and accessible way for residents to discover and purchase products and services from their local area, while also encouraging economic growth and environmental sustainability.
+</br>          </br>Community Support: </br> 
+                - Buying local food supports small-scale agriculture and keeps money in the local economy.
+</br> - Eating locally sourced produce aligns your diet with what's in season, offering a variety of flavours and nutrients throughout the year.
+</br>         - By choosing fresh produce, you not only benefit your health but also cintribute to a more sustainable and resilient food system.
+</br>          </br>Be ready to check out our producers!
+            </p>
         </div>
     </div>
 </section>

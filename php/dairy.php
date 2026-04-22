@@ -56,6 +56,10 @@
             <h3>Dairy Land</h3>
             <p>Discover the finest dairy products sourced from local farms. We are committed to providing high-quality, fresh dairy items to your doorstep.<br></br>
             Our products are carefully selected to ensure they meet our strict standards for taste, texture, and nutritional value. Whether you're looking for creamy milk, rich cheese, or delicious yogurt, we have a wide variety of options to satisfy your cravings.<br>
+           </br> Benefits:</br>
+            - Reduces tiredness and fatigue</br>
+            - We provide high-quality protein, which is essential for growth and repair.</br>
+            - No artificial flavour, organic
             </p>
         </div>
     </div>

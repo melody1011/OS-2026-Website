@@ -52,7 +52,13 @@
 
         <div class="content">
             <h3>Sweet & Sour</h3>
-            <p>Discover our range of refreshing beverages, perfect for any occasion. From sweet sodas to tangy fruit juices, we have something for everyone. <br></br> Sweet and sour flavours combine to create a unique taste experience. Whether you're looking for a sweet treat or a tangy pick-me-up, our beverages are sure to satisfy your cravings. Enjoy the perfect balance of sweetness and sourness in every sip. Try our delicious beverages today and quench your thirst with a burst of flavor!</p>
+            <p>Discover our range of refreshing beverages, perfect for any occasion. From sweet sodas to tangy fruit juices, we have something for everyone. <br></br> Sweet and sour flavours combine to create a unique taste experience. Whether you're looking for a sweet treat or a tangy pick-me-up, our beverages are sure to satisfy your cravings. Enjoy the perfect balance of sweetness and sourness in every sip. Try our delicious beverages today and quench your thirst with a burst of flavor!</br>
+             </br>  Benefits:</br>
+               - Harvested at its peak ripeness, ensuring maximum freshness and nutritional value.</br>
+               - Buying from us aligns with sustainable agriculture practices, reducing waste and promoting environmental responsibility.</br>
+               - Intense and fresh flavour
+
+        </p>
             </p>
         </div>
     </div>

@@ -26,11 +26,10 @@ foreach ($cart as $item) {
     <a href="homepage.php" class="logo"><img src="../images/logo.png" alt="Logo"></a>
 
     <nav class="navbar">
-        <a href="../php/homepage.php">Home</a>
-        <a href="#about">About</a>
-        <a href="#marketplace">MarketPlace</a>
-        <a href="#news">News</a>
-        <a href="#events">Events</a>
+        <a href="../php/user_page.php">Home</a>
+        <a href="../php/user_page.php">MarketPlace</a>
+        <a href="../php/user_page.php">News</a>
+        <a href="../php/user_page.php">Events</a>
         
     </nav>
 
@@ -92,7 +91,6 @@ foreach ($cart as $item) {
         <div class="box">
             <h3>Quick Links</h3>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
             <a href="#marketplace">Marketplace</a>
             <a href="#news">News</a>
             <a href="#events">Events</a>

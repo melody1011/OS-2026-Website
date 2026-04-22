@@ -55,6 +55,10 @@
             <h3>BigUp Protein</h3>
             <p>Discover the finest animal proteins sourced from local farms. We are committed to providing high-quality, sustainably raised meat and poultry to your doorstep.<br></br>
             Our proteins are carefully selected to ensure they meet our strict standards for taste, texture, and nutritional value. Whether you're looking for juicy beef, tender chicken, or flavorful pork, we have a wide variety of options to satisfy your cravings.<br>
+      </br> Benefits:</br>
+            - higher digestibility score, allowing for efficient absorption and utilisation b the body.</br>
+            - Provide additional nutrients</br>
+            - Supports muscle strength and metabolic health
             </p>
         </div>
     </div>

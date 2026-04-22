@@ -55,6 +55,10 @@
             <h3>Loafs2Be</h3>
             <p>Discover the finest bakery and grain products sourced from local suppliers. We are committed to providing high-quality, freshly baked goods and nutritious grains to your doorstep.<br></br>
             Our products are carefully selected to ensure they meet our strict standards for taste, texture, and nutritional value. Whether you're looking for fresh bread, pastries, or whole grains, we have a wide variety of options to satisfy your cravings.<br>
+    </br>   Benefits:</br>
+            - Our products retain its natural taste and nutritional value.</br>
+            - Maintain traditional food practices and flavours.</br>
+            - Build a relationship with us! We love to see new faces and supporters.
             </p>
         </div>
     </div>

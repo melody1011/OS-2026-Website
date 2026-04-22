@@ -55,6 +55,10 @@
             <h3>Seafood Hub</h3>
             <p>Discover the freshest seafood directly from our local suppliers. We are committed to providing high-quality, sustainably sourced seafood to your doorstep.<br></br>
             Our seafood is carefully selected to ensure it meets our strict standards for freshness and quality. Whether you're looking for succulent shrimp, tender fish fillets, or flavorful shellfish, we have a wide variety of options to satisfy your cravings.<br>
+</br>   Benefits:</br>
+            - All varieties of fish are packed with protein, essential for muscle growth and maintenance.</br>
+            - Keeps the heart healthy</br>
+            - Prevents deficiencies
             </p>
         </div>
     </div>

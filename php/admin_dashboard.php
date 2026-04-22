@@ -36,11 +36,11 @@ if (isset($_POST['add_product'])) {
         $target_dir = "../images/";
         $file_name = basename($_FILES["image"]["name"]);
         $imageFileType = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
-        $allowed_types = ['jpg', 'jpeg', 'png', 'gif'];
+        $allowed_types = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
         $max_size = 2 * 1024 * 1024; // 2MB
 
         if (!in_array($imageFileType, $allowed_types)) {
-            $errors[] = "Only JPG, JPEG, PNG, and GIF files are allowed.";
+            $errors[] = "Only JPG, JPEG, PNG, WEBP, and GIF files are allowed.";
         } elseif ($_FILES["image"]["size"] > $max_size) {
             $errors[] = "File size must be less than 2MB.";
         } else {
@@ -64,7 +64,7 @@ if (isset($_POST['add_product'])) {
 
     if (empty($errors)) {
         // Insert into database
-        $sql = "INSERT INTO products (name, category, price, original_price, description, image_path) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO products (name, category, price, original_price, description, image_path) VALUES ($name, $category, $price, $original_price, $description, $image_path)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ssdsss", $name, $category, $price, $original_price, $description, $image_path);
 
@@ -223,10 +223,47 @@ $conn->close();
             </div>
             <small class="text-muted">Last 24 Hours </small>
         </div>
+        <!--END OF INCOME-->
 
-        <!--END OF SALES-->
+        <div class="products">
+            <div class="middle">
+                <h3>Total Products</h3>
+                <h1>{0}</h1>
+            </div>
+        </div>
+
+        <div class="stock">
+            <div class="middle">
+                <h3>Total Stock</h3>
+                <h1>{0}</h1>
+            </div>
+        </div>
+
+        <div class="order">
+            <div class="middle">
+                <h3>Orders Today</h3>
+                <h1>{0}</h1>
+            </div>
+        </div>
+
+        <div class="stock-products">
+            <h3>Out Of Stock Products</h3>
+            <p>No products out of stock</p>
+        </div>
+
+        <div class="high-sale">
+            <h3>Highest Sale Products</h3>
+            <p>Loading...</p>
+        </div>
+
+        <div class="low-sale">
+            <h3>Lowest Sale Products</h3>
+            <p>No low stock products</p>
+       </div>
 
     </div>
+
+
 
 
 </section>
